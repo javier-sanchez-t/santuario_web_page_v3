@@ -1,3 +1,27 @@
+:root{
+ --bg_recorridos_banner: rgb(15, 84, 35, 0.65);
+}
+
+@font-face {
+ font-family: 'HelveticaText';
+ src: url('../css/fonts/Helvetica_LT_Std_Condensed.woff') format('woff');
+}
+
+@font-face {
+ font-family: 'HelveticaTitles';
+ src: url('../css/fonts/Helvetica_LT_Std_Bold_Condensed.woff') format('woff');
+}
+
+html{
+ height: 100%;
+}
+
+body{ 
+ height: 100%;
+ font-family: 'HelveticaText'; 
+ background: rgb(131,127,142);
+ background: linear-gradient(180deg, rgba(131,127,142,1) 0%, rgba(121,121,121,0) 100%); 
+}
 
 .center{
  text-align: center;
@@ -10,4 +34,31 @@
 
 .navbar{
  background-color: #837f8e;
+}
+
+.recorridosSection{
+ background-image: url(../img/recorridos/background.png); 
+ background-position: center center;
+ background-repeat: no-repeat;
+ width: 100%;
+ object-fit: cover;
+ padding-top: 50px;
+}
+
+.recorridosBanner{
+ background: var(--bg_recorridos_banner);
+}
+
+@media only screen and (max-width: 995px) {
+ .logoSection {
+   width: 90% !important;
+ }
+
+ .recorridosText{
+  width: 90% !important;
+ }
+
+ .optionsSection{
+  width: 95% !important;
+ }
 }
