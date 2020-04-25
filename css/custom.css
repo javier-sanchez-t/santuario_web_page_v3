@@ -37,7 +37,7 @@ body{
 }
 
 .recorridosSection{
- background-image: url(../img/recorridos/background.png); 
+ background-image: url(../img/recorridos/background.jpg); 
  background-position: center center;
  background-repeat: no-repeat;
  width: 100%;
@@ -55,10 +55,28 @@ body{
  }
 
  .recorridosText{
-  width: 90% !important;
+  width: 80% !important;
  }
 
  .optionsSection{
-  width: 95% !important;
+  width: 100% !important;
  }
+}
+
+@media (max-width: 575.98px) {
+  .centerOnMobile{
+    text-align: center !important;
+  }
+
+  .logoSection {
+    width: 40% !important;
+  }
+
+  .padB20{
+    padding-bottom: 20px !important;
+  }
+
+  .padT20{
+    padding-top: 20px !important;
+  }
 }
