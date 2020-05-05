@@ -1,5 +1,7 @@
 :root{
  --bg_recorridos_banner: rgb(15, 84, 35, 0.65);
+ --page-font-color: white;
+ --bg_footer: #1a151c;
 }
 
 @font-face {
@@ -28,8 +30,8 @@ body{
 }
 
 .headerOpcionMenuImg{
- width: 75%;
- height: 75%;
+ width: 55%;
+ height: 55%;
 }
 
 .navbar{
@@ -64,6 +66,41 @@ body{
  background: var(--bg_recorridos_banner);
 }
 
+.footerLetra{
+  color: var(--page-font-color);
+  font-size: 20px;
+}
+
+.footertitulo{
+  color: var(--page-font-color);
+  font-size: 15px;
+}
+
+.footer{
+  background-color: var(--bg_footer);
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: #977fa3;
+  font-size: 18px;
+}
+
+.footer2{
+  background-color: var(--bg_footer);
+  padding-bottom: 50px;
+  color: #977fa3;
+  font-size: 18px;
+}
+
+.footerLink{
+  color: #977fa3; 
+  text-decoration: none;
+}
+
+.footerLink:hover{
+  color: #ffffff; 
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 995px) {
  .logoSection {
    width: 90% !important;
@@ -75,6 +112,10 @@ body{
 }
 
 @media (max-width: 575.98px) {
+  .desktop{
+    display: none !important;
+  }
+
   .centerOnMobile{
     text-align: center !important;
   }
@@ -89,6 +130,10 @@ body{
 
   .padL0{
     padding-left: 0px !important; 
+  }
+
+  .padL20{
+    padding-left: 20px !important; 
   }
 
   .padB20{
