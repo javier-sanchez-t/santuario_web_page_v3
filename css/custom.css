@@ -1,5 +1,6 @@
 :root{
  --bg_recorridos_banner: rgb(15, 84, 35, 0.65);
+ --bg_sierra_banner: rgb(25, 123, 187, 0.65);
  --page-font-color: white;
  --bg_footer: #1a151c;
 }
@@ -51,7 +52,20 @@ body{
  background-position: center;
  background-size: cover;
  padding-top: 50px;
+ border-bottom: solid 5px #ffffff;
 }
+
+.sierraNevadaSection{
+  background-image: url(../img/sierra_nevada/background.jpg); 
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  /*object-fit: cover;*/
+  background-position: center;
+  background-size: cover;
+  padding-top: 50px;
+  border-bottom: solid 5px #ffffff;
+ }
 
 .recorridosText{
   color: #ffffff; 
@@ -65,6 +79,10 @@ body{
 .recorridosBanner{
  background: var(--bg_recorridos_banner);
 }
+
+.sierraNevadaBanner{
+  background: var(--bg_sierra_banner);
+ }
 
 .footerLetra{
   color: var(--page-font-color);
@@ -128,6 +146,10 @@ body{
     width: 40% !important;
   }
 
+  .w75pct{
+    width: 75% !important;
+  }
+
   .padL0{
     padding-left: 0px !important; 
   }
@@ -156,7 +178,8 @@ body{
 
 /*EFECTS*/
 
-/* Bubble Float Bottom */
+
+/* Bubble Float Bottom - GREEN */
 .hvr-bubble-float-bottom {
   display: inline-block;
   vertical-align: middle;
@@ -191,6 +214,44 @@ body{
   -webkit-transform: translateY(10px);
   transform: translateY(10px);
 }
+
+
+/* Bubble Float Bottom - BLUE */
+.hvr-bubble-float-bottom-blue {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-bubble-float-bottom-blue:before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  left: calc(50% - 10px);
+  bottom: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #285065 transparent transparent transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-bubble-float-bottom-blue:hover, .hvr-bubble-float-bottom-blue:focus, .hvr-bubble-float-bottom-blue:active {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.hvr-bubble-float-bottom-blue:hover:before, .hvr-bubble-float-bottom-blue:focus:before, .hvr-bubble-float-bottom-blue:active:before {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
 
 
 /* Float Shadow */
