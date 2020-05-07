@@ -1,6 +1,7 @@
 :root{
  --bg_recorridos_banner: rgb(15, 84, 35, 0.65);
  --bg_sierra_banner: rgb(25, 123, 187, 0.65);
+ --bg_hospedaje_banner: rgb(27, 19, 18, 0.65);
  --page-font-color: white;
  --bg_footer: #1a151c;
 }
@@ -82,7 +83,15 @@ body{
 
 .sierraNevadaBanner{
   background: var(--bg_sierra_banner);
- }
+}
+
+.sierraNevadaBanner{
+  background: var(--bg_sierra_banner);
+}
+
+.hospedajeBanner{
+  background: var(--bg_hospedaje_banner);
+}
 
 .footerLetra{
   color: var(--page-font-color);
@@ -252,6 +261,42 @@ body{
   transform: translateY(10px);
 }
 
+
+/* Bubble Float Bottom - PURPLE */
+.hvr-bubble-float-bottom-purple {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-bubble-float-bottom-purple:before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  left: calc(50% - 10px);
+  bottom: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #231a2e transparent transparent transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-bubble-float-bottom-purple:hover, .hvr-bubble-float-bottom-purple:focus, .hvr-bubble-float-bottom-purple:active {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.hvr-bubble-float-bottom-purple:hover:before, .hvr-bubble-float-bottom-purple:focus:before, .hvr-bubble-float-bottom-purple:active:before {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
 
 
 /* Float Shadow */
