@@ -2,6 +2,7 @@
  --bg_recorridos_banner: rgb(15, 84, 35, 0.65);
  --bg_sierra_banner: rgb(25, 123, 187, 0.65);
  --bg_hospedaje_banner: rgb(27, 19, 18, 0.65);
+ --bg_mercado_banner: rgb(240, 151, 26, 0.40);
  --page-font-color: white;
  --bg_footer: #1a151c;
 }
@@ -16,8 +17,16 @@
  src: url('../css/fonts/Helvetica_LT_Std_Bold_Condensed.woff') format('woff');
 }
 
-html{
+/*html{
  height: 100%;
+}*/
+
+html  {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
 }
 
 body{ 
@@ -29,6 +38,10 @@ body{
 
 .center{
  text-align: center;
+}
+
+.right{
+  text-align: right;
 }
 
 .headerOpcionMenuImg{
@@ -50,7 +63,6 @@ body{
  background-repeat: no-repeat;
  width: 100%;
  /*object-fit: cover;*/
- background-position: center;
  background-size: cover;
  padding-top: 50px;
  border-bottom: solid 5px #ffffff;
@@ -62,7 +74,28 @@ body{
   background-repeat: no-repeat;
   width: 100%;
   /*object-fit: cover;*/
-  background-position: center;
+  background-size: cover;
+  padding-top: 50px;
+  border-bottom: solid 5px #ffffff;
+ }
+
+ .hospedajeSection{
+  background-image: url(../img/hospedaje/background.jpg); 
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  /*object-fit: cover;*/
+  background-size: cover;
+  padding-top: 50px;
+  border-bottom: solid 5px #ffffff;
+ }
+
+ .mercadoSection{
+  background-image: url(../img/mercado_estacion/background.jpg); 
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  /*object-fit: cover;*/
   background-size: cover;
   padding-top: 50px;
   border-bottom: solid 5px #ffffff;
@@ -91,6 +124,10 @@ body{
 
 .hospedajeBanner{
   background: var(--bg_hospedaje_banner);
+}
+
+.mercadoBanner{
+  background: var(--bg_mercado_banner);
 }
 
 .footerLetra{
@@ -153,6 +190,10 @@ body{
 
   .logoSection {
     width: 40% !important;
+  }
+
+  .w120{
+    width: 120px !important;
   }
 
   .w75pct{
