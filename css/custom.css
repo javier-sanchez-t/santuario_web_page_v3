@@ -1,4 +1,5 @@
 :root{
+ --bg_luciernagas: #5f5b6c;
  --bg_recorridos_banner: rgb(15, 84, 35, 0.65);
  --bg_sierra_banner: rgb(25, 123, 187, 0.65);
  --bg_hospedaje_banner: rgb(27, 19, 18, 0.65);
@@ -17,9 +18,6 @@
  src: url('../css/fonts/Helvetica_LT_Std_Bold_Condensed.woff') format('woff');
 }
 
-/*html{
- height: 100%;
-}*/
 
 html  {
   width: 100%;
@@ -32,8 +30,9 @@ html  {
 body{ 
  height: 100%;
  font-family: 'HelveticaText'; 
- background: rgb(131,127,142);
- background: linear-gradient(180deg, rgba(131,127,142,1) 0%, rgba(121,121,121,0) 100%); 
+ background: linear-gradient(180deg, rgba(131,127,142,1) 0%, rgba(121,121,121,0) 100%);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
 }
 
 .center{
@@ -55,6 +54,36 @@ body{
 
 .navOption{
   border-bottom: solid 3px #ffffff;
+}
+
+.luciernagasSection{
+  background-color: var(--bg_luciernagas);
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.luciernagasDesc{
+  margin: 0px 30px 0px 30px;
+}
+
+.luciernagasBanner{
+  opacity: 0.8;
+  background-color: #353140;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.imgLuciernagasDesc{
+  margin-left: 20px;
+}
+
+h1.subtitleDesc{
+  font-size: 22px;
+}
+
+h1.subtitleDesc2{
+  font-size: 30px;
 }
 
 .recorridosSection{
@@ -176,8 +205,21 @@ body{
 }
 
 @media (max-width: 575.98px) {
+  .luciernagasTitle{
+    width: 240px !important;
+  }
+
+  .imgLuciernagasDesc{
+    width: 100% !important;
+    margin-bottom: 15px;  
+  }
+
   .desktop{
     display: none !important;
+  }
+
+  .mobile{
+    display: block !important;
   }
 
   .centerOnMobile{
@@ -198,6 +240,10 @@ body{
 
   .w75pct{
     width: 75% !important;
+  }
+
+  .w100pct{
+    width: 100% !important;
   }
 
   .padL0{
