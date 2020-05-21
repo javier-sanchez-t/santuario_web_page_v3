@@ -35,12 +35,22 @@ body{
  background-attachment: fixed;
 }
 
+.imgCarrusel{
+    width: 100% !important;
+    height: 470px;
+    object-fit: cover;
+}
+
 .center{
  text-align: center;
 }
 
 .right{
   text-align: right;
+}
+
+.txtJustiff{
+  text-align: justify;
 }
 
 .headerOpcionMenuImg{
@@ -59,7 +69,8 @@ body{
 .luciernagasSection{
   background-color: var(--bg_luciernagas);
   color: #ffffff;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .luciernagasDesc{
@@ -70,7 +81,6 @@ body{
   opacity: 0.8;
   background-color: #353140;
   padding: 10px;
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -84,6 +94,24 @@ h1.subtitleDesc{
 
 h1.subtitleDesc2{
   font-size: 30px;
+}
+
+.card-body{
+  color: #000000;
+}
+
+.card-header{
+  background-color: #3d3949;
+  color: #ffffff;
+  padding: 0px;
+}
+
+.btn-link{
+  color: #ffffff;
+}
+
+.btn-link:hover{
+  color: #ffffff;
 }
 
 .recorridosSection{
@@ -205,6 +233,12 @@ h1.subtitleDesc2{
 }
 
 @media (max-width: 575.98px) {
+  .imgCarrusel{
+    width: 100% !important;
+    height: 280px;
+    object-fit: cover;
+  }
+
   .luciernagasTitle{
     width: 240px !important;
   }
