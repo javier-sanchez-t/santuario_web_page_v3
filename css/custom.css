@@ -170,6 +170,10 @@ h1.subtitleDesc2{
   border-color: #372d45;
  }
 
+ .paquetesDes{
+   font-size: 22px;
+ }
+
  .mercadoSection{
   background-image: url(../img/mercado_estacion/background.jpg); 
   background-position: center center;
@@ -261,6 +265,14 @@ h1.subtitleDesc2{
 }
 
 @media (max-width: 575.98px) {
+  .aditamentos{
+    width: 120px;
+  }
+
+  .paquetesDes{
+    font-size: 16px !important;
+  }
+
   .paquetesButton{
     font-size: 16px;
     bottom: 15px;

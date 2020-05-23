@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+ <link rel="stylesheet" type="text/css" href="./css/custom.css" />
+ <link rel="stylesheet" type="text/css" href="./menu_assets/css/menu_overlay.css" />
+ <!--link rel="stylesheet" type="text/css" href="./css/hover-min.css" /-->
+
+ <title>Bosque Mágico</title>
+</head>
+
+<body>
+
+
+ <!-- NAV BAR-->
+ <nav class="navbar navbar-expand-lg navbar-dark">
+  <button onclick="openNav()" class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarText"
+   aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!--a class="navbar-brand mx-auto" href="/" style="padding-right: 60px;">
+   <img src="img/header/bosque-magico.png" style="width: 120px;">
+  </a-->
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav mr-auto">
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#CONTACTO';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/contacto.png">
+     </a>
+    </li>
+
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#GASTRONOMIA';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/gastronomia.png">
+     </a>
+    </li>
+
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#PAQUETES';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/paquetes.png">
+     </a>
+    </li>
+
+
+    <li class="nav-item active" style="width: 300px;">
+     <img src="img/header/bosque-magico.png" style="width: 100%;">
+    </li>
+
+
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#HOSPEDAJE';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/hospedaje.png">
+     </a>
+    </li>
+
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#CAMPAMENTO';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/campamento.png">
+     </a>
+    </li>
+
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#RECORRIDOS';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/recorridos.png">
+     </a>
+    </li>
+   </ul>
+  </div>
+ </nav>
+
+
+ <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+   <table style="margin: 0 auto;">
+    <tr class="navOption">
+     <td>
+      <a href="">
+       <img src="./img/recorridos/icon.png" width="35" alt="Recorridos">
+      </a>
+     </td>
+     <td align="left">
+      <a href="#">RECORRIDOS</a>
+     </td>
+    </tr>
+
+    <tr class="navOption">
+     <td class="padT20">
+      <a href="">
+       <img src="./img/campamento/icon.png" width="35" alt="Recorridos">
+      </a>
+     </td>
+     <td align="left" class="padT20">
+      <a href="#">CAMPAMENTO</a>
+     </td>
+    </tr>
+
+    <tr class="navOption">
+     <td class="padT20">
+      <a href="">
+       <img src="./img/hospedaje/icon.png" width="35" alt="Recorridos">
+      </a>
+     </td>
+     <td align="left" class="padT20">
+      <a href="#">HOSPEDAJE</a>
+     </td>
+    </tr>
+
+    <tr class="navOption">
+     <td class="padT20">
+      <a href="">
+       <img src="./img/recorridos/icon.png" width="35" alt="Recorridos">
+      </a>
+     </td>
+     <td align="left" class="padT20">
+      <a href="#">PAQUETES</a>
+     </td>
+    </tr>
+
+    <tr class="navOption">
+     <td class="padT20">
+      <a href="">
+       <img src="./img/recorridos/icon.png" width="35" alt="Recorridos">
+      </a>
+     </td>
+     <td align="left" class="padT20">
+      <a href="#">GASTRONOMÍA</a>
+     </td>
+    </tr>
+
+    <tr class="navOption">
+     <td class="padT20">
+      <a href="">
+       <img src="./img/recorridos/icon.png" width="35" alt="Recorridos">
+      </a>
+     </td>
+     <td align="left" class="padT20">
+      <a href="#">CONTACTO</a>
+     </td>
+    </tr>
+   </table>
+
+  </div>
+ </div>
+
+
+
+ <!--PAQUETES-->
+ <div class="container-fluid paquetesSection" id="PAQUETES">
+  <div class="row position-relative" data-aos="fade-up">
+   <img src="./img/paquetes/bosque-magico-paquetes-2020.jpg" alt="Paquetes" style="width: 100%;">
+  </div>
+ </div>
+ <!--END OF PAQUETES-->
+
+ <!--CAMPAMENTO-->
+ <div class="container-fluid paquetesSection">
+  <div class="container">
+   <div class="row" style="padding-top: 50px;" data-aos="fade-up">
+    <img src="./img/paquetes/campamento/campamento.png" alt="Campamento" style="width: 100%;">
+   </div>
+   <div class="row paquetesDes" data-aos="fade-up">
+    <div class="col-sm-12" style="padding-top: 20px;">
+     Tienda de acampar para 2 personas, 1 colchoneta, 2 cobijas, 2 almohadas, 2 kit de higiene y 1 linterna.
+    </div>
+
+    <div class="col-12" style="padding-top: 10px;">
+     <img src="./img/paquetes/campamento/incluye.png" style="width: 100%;" alt="Incluye">
+    </div>
+
+    <div class="col-12" style="padding-top: 10px;">
+     <ul>
+      <li>2 Recorridos Bosque y Luciérnagas. Única salida 7:00 pm.</li>
+      <li>2 Recorridos Magueyes y Pulque. Horario de 12:00 pm a 5:00 pm.</li>
+      <li>4 Traslados // Bosque y Luciérnagas // Magueyes y Pulque.</li>
+      <li>2 Cargas de leña.</li>
+      <li>16 cupones para Mercado Gastronómico La Estación.</li>
+     </ul>
+     <br><br>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!--END OF CAMPAMENTO-->
+
+ <!--CAMPAMENTO BOUTIQUE-->
+ <div class="container-fluid paquetesSection">
+  <div class="container">
+   <div class="row" style="padding-top: 50px;" data-aos="fade-up">
+    <img src="./img/paquetes/campamento_boutique/campamento_boutique_header.png" alt="Campamento boutique"
+     style="width: 100%;">
+   </div>
+   <div class="row paquetesDes" data-aos="fade-up">
+    <div class="col-sm-12" style="padding-top: 20px;">
+     Estructura estilo cabaña con domo de cristal y área de exterior con capacidad para dos personas, dentro de ella
+     encontrarás: <br><br>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-12">
+     <ul>
+      <li>1 Cama matrimonial</li>
+      <li>1 Barra con dos bancos</li>
+     </ul>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-12">
+     <ul>
+      <li>2 Cobijas</li>
+      <li>1 Juego de sabanas</li>
+     </ul>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-6">
+     <ul>
+      <li>2 Almoadas</li>
+      <li>2 Kit de higiene</li>
+      <li>1 Linterna</li>
+     </ul>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-6">
+     <img src="./img/paquetes/campamento_boutique/aditamentos.png" width="150" class="aditamentos" alt="Aditamentos">
+    </div>
+
+    <div class="col-12" style="padding-top: 10px;">
+     <img src="./img/paquetes/campamento_boutique/inlcuye.png" style="width: 100%;" alt="Incluye">
+    </div>
+
+    <div class="col-12" style="padding-top: 10px;">
+     <ul>
+      <li>2 Recorridos Bosque y Luciérnagas. Única salida 7:00 pm.</li>
+      <li>2 Recorridos Magueyes y Pulque. Horario de 12:00 pm a 5:00 pm.</li>
+      <li>4 Traslados // Bosque y Luciérnagas // Magueyes y Pulque.</li>
+      <li>2 Cargas de leña.</li>
+      <li>16 cupones para Mercado Gastronómico La Estación.</li>
+     </ul>
+     <br><br>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!--END OF CAMPAMENTO BOUTIQUE-->
+
+ <!--HOTEL ALBA-->
+ <div class="container-fluid paquetesSection">
+  <div class="container">
+   <div class="row" style="padding-top: 50px;" data-aos="fade-up">
+    <img src="./img/paquetes/hotel_alba/hotel_alba.png" alt="Hotel Alba" style="width: 100%;">
+   </div>
+   <div class="row paquetesDes" data-aos="fade-up">
+    <div class="col-12" style="padding-top: 10px;">
+     <img src="./img/paquetes/hotel_alba/incluye.png" style="width: 100%;" alt="Incluye">
+    </div>
+
+    <div class="col-12" style="padding-top: 10px;">
+     <ul>
+      <li>2 Recorridos Bosque y Luciérnagas. Única salida 7:00 pm.</li>
+      <li>2 Recorridos Magueyes y Pulque. Horario de 12:00 pm a 5:00 pm.</li>
+      <li>4 Traslados // Bosque y Luciérnagas // Magueyes y Pulque.</li>
+      <li>16 cupones para Mercado Gastronómico La Estación.</li>
+     </ul>
+     <br><br>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!--END OF HOTEL ALBA-->
+
+ <!--POSADA LOS PINOS-->
+ <div class="container-fluid paquetesSection">
+  <div class="container">
+   <div class="row" style="padding-top: 50px;" data-aos="fade-up">
+    <img src="./img/paquetes/posada_pinos/posada_pinos.png" alt="Posada Los Pinos" style="width: 100%;">
+   </div>
+   <div class="row paquetesDes" data-aos="fade-up">
+    <div class="col-12" style="padding-top: 10px;">
+     <img src="./img/paquetes/posada_pinos/incluye.png" style="width: 100%;" alt="Incluye">
+    </div>
+
+    <div class="col-12" style="padding-top: 10px;">
+     <ul>
+      <li>2 Recorridos Bosque y Luciérnagas. Única salida 7:00 pm.</li>
+      <li>2 Recorridos Magueyes y Pulque. Horario de 12:00 pm a 5:00 pm.</li>
+      <li>4 Traslados // Bosque y Luciérnagas // Magueyes y Pulque.</li>
+      <li>16 cupones para Mercado Gastronómico La Estación.</li>
+     </ul>
+     <br><br>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!--END OF POSADA LOS PINOS-->
+
+ <!--RANCHO LA TORRE-->
+ <div class="container-fluid paquetesSection">
+  <div class="container">
+   <div class="row" style="padding-top: 50px;" data-aos="fade-up">
+    <img src="./img/paquetes/rancho_torre/rancho_torre.png" alt="Rancho La Torre" style="width: 100%;">
+   </div>
+   <div class="row paquetesDes" data-aos="fade-up">
+    <div class="col-12" style="padding-top: 10px;">
+     <img src="./img/paquetes/rancho_torre/incluye.png" style="width: 100%;" alt="Incluye">
+    </div>
+
+    <div class="col-12" style="padding-top: 10px;">
+     <ul>
+      <li>2 Recorridos Bosque y Luciérnagas. Única salida 7:00 pm.</li>
+      <li>2 Recorridos Magueyes y Pulque. Horario de 12:00 pm a 5:00 pm.</li>
+      <li>4 Traslados // Bosque y Luciérnagas // Magueyes y Pulque.</li>
+      <li>16 cupones para Mercado Gastronómico La Estación.</li>
+     </ul>
+     <br><br>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!--END OF RANCHO LA TORRE-->
+
+ <!--FOOTER -->
+ <div class="container-fluid footer" id="CONTACTO">
+  <div class="row">
+   <div class="col-12 col-sm-6 col-lg-3">
+    <div style="width: 100%; text-align: center;">
+     <img src="./img/Footer/bosque magico.png" alt="Bosque Mágico" width="150">
+    </div>
+   </div>
+
+   <div class="col-12 col-sm-6 col-lg-3 padT20">
+    <div style="width: 100%;">
+     <table width="100%">
+      <tr>
+       <td style="border-bottom: solid 2px #977fa3;">
+        INFORMES Y RESERVAS
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div>
+     <a href="mailto:reservas@bosquemagico.com.mx" target="_blank" class="footerLink">
+      <img src="./img/Footer/sobre.png" alt="Teléfono" width="20"> reservas@bosquemagico.com.mx
+     </a>
+    </div>
+    <div>
+     <a href="tel:+52-748-105-8284" class="footerLink">
+      <img src="./img/Footer/llamada.png" alt="Teléfono" width="20"> 748 105 8284
+     </a>
+    </div>
+    <div>
+     <a href="tel:+52-748-106-0111" class="footerLink">
+      <img src="./img/Footer/llamada.png" alt="Teléfono" width="20"> 748 106 0111
+     </a>
+    </div>
+
+    <div style="width: 100%; padding-top: 30px;">
+     <table width="100%">
+      <tr>
+       <td style="border-bottom: solid 2px #977fa3;">
+        DESCARGAS
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div>
+     <a href="#" target="_blank" class="footerLink">
+      PAQUETES
+     </a>
+    </div>
+    <div>
+     <a href="./img/informacion/Recomendaciones.jpg" download class="footerLink">
+      RECOMENDACIONES
+     </a>
+    </div>
+    <div>
+     <a href="./img/informacion/Reglamento.jpg" download class="footerLink">
+      REGLAMENTO
+     </a>
+    </div>
+   </div>
+
+
+   <div class="col-12 col-sm-6 col-lg-3 padT20 padL20" style="padding-left: 40px;">
+    <div style="padding-bottom: 15px;">
+     <a href="tel:+52-748-106-0111" class="footerLink">
+      <img src="./img/Footer/vuelos.png" alt="Vuelos" width="20">&nbsp;&nbsp; VUELOS
+     </a>
+    </div>
+    <div style="padding-bottom: 15px;">
+     <a href="tel:+52-748-106-0111" class="footerLink">
+      <img src="./img/Footer/facturacion.png" alt="Facturación" width="15">&nbsp;&nbsp; FACTURACIÓN
+     </a>
+    </div>
+    <div style="padding-bottom: 15px;">
+     <a href="tel:+52-748-106-0111" class="footerLink">
+      <img src="./img/Footer/clima.png" alt="Calendario lunar" width="20">&nbsp;&nbsp; CALENDARIO LUNAR
+     </a>
+    </div>
+    <div style="padding-bottom: 15px;">
+     <a href="tel:+52-748-106-0111" class="footerLink">
+      <img src="./img/Footer/como llegar.png" alt="Como llegar" width="17">&nbsp;&nbsp; COMO LLEGAR
+     </a>
+    </div>
+   </div>
+
+
+   <div class="col-12 col-sm-6 col-lg-3 centerOnMobile padT20">
+    <div>
+     <img src="./img/sierra_nevada/bosque-magico-fondo-sierra-nevada.png" alt="Sierra Nevada" width="150">
+     <br class="desktop">
+     <br class="desktop">
+     <br class="desktop">
+     &nbsp;&nbsp;
+     <img src="./img/mercado_estacion/bosque-magico-fondo-mercado-la-estacion.png" alt="Sierra Nevada" width="150">
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="container-fluid footer2 padT20 center">
+  <div style="padding-bottom: 10px;">
+   <img src="./img/Footer/bosque magico.png" alt="Bosque mágico" width="100">
+  </div>
+  <div>
+   &copy; 2020 Derechos reservados, Bosque Mágico
+  </div>
+ </div>
+ <!--END OF FOOTER -->
+
+
+
+ <!-- JS, Popper.js, and jQuery -->
+ <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ <script src="./menu_assets/js/menu_overlay.js"></script>
+
+ <!--SCROLL EFECTS-->
+ <link href="./css/AOS.css" rel="stylesheet">
+ <script src="./js/AOS.js"></script>
+ <script>
+  AOS.init();
+ </script>
+
+ <script src="./js/custom.js"></script>
+</body>
+
+</html>
