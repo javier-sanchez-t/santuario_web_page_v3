@@ -265,6 +265,11 @@ h1.subtitleDesc2{
 }
 
 @media (max-width: 575.98px) {
+  .pad0{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
   .aditamentos{
     width: 120px;
   }
