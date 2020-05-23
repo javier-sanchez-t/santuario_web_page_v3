@@ -147,6 +147,29 @@ h1.subtitleDesc2{
   border-bottom: solid 5px #ffffff;
  }
 
+ .paquetesSection{
+  border-bottom: solid 5px #ffffff;
+ }
+
+ .paquetesButton{
+  position: absolute; 
+  bottom: 100px;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  background-color: #c4c0c1;
+  color: #372d45;
+  border-color: #372d45;
+ }
+
+ .paquetesButton:hover{
+  background-color:#372d45;
+  color:#c4c0c1;
+  border-color: #372d45;
+ }
+
  .mercadoSection{
   background-image: url(../img/mercado_estacion/background.jpg); 
   background-position: center center;
@@ -230,9 +253,19 @@ h1.subtitleDesc2{
  .optionsSection{
   width: 100% !important;
  }
+
+ .paquetesButton{
+   font-size: 24px;
+   bottom: 50px;
+ }
 }
 
 @media (max-width: 575.98px) {
+  .paquetesButton{
+    font-size: 16px;
+    bottom: 15px;
+  }
+
   .imgCarrusel{
     width: 100% !important;
     height: 280px;
