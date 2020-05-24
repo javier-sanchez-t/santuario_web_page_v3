@@ -249,6 +249,22 @@ h1.subtitleDesc2{
   text-decoration: none;
 }
 
+#facturaModalTittle{
+  text-align: center;
+  width: 100%;
+}
+
+.modal-content{
+  background-image: url("../img/luciernagas/bosque-magico-luciernagas-009.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover; 
+}
+
+#facturaModal{
+  color: #ffffff;
+}
+
 @media only screen and (max-width: 995px) {
  .logoSection {
    width: 90% !important;
