@@ -48,7 +48,7 @@ function sendFacturasForm() {
  Email.send({
   Host: "smtp.gmail.com",
   Username: "jefe10jav@gmail.com",
-  Password: "1892soymasterjav",
+  Password: "",
   To: 'jefe10jav@gmail.com',
   From: "jefe10jav@gmail.com",
   Subject: "Solicitud de facturación",
