@@ -51,6 +51,12 @@ body{
   object-fit: cover;
 }
 
+.imgCarruselMedio2{
+  width: 100% !important;
+  height: 630px;
+  object-fit: cover;
+}
+
 .center{
  text-align: center;
 }
@@ -222,6 +228,15 @@ h1.subtitleDesc2{
   padding-bottom: 8px;
 }
 
+.descriptionText{
+  font-size: 19px;
+  text-align: justify;
+}
+
+.imgDescription{
+  border: 5px solid #ffffff;
+}
+
 .recorridosBanner{
  background: var(--bg_recorridos_banner);
 }
@@ -309,6 +324,10 @@ h1.subtitleDesc2{
 }
 
 @media (max-width: 575.98px) {
+  .bosqueLuciernagasTitle{
+    width: 310px !important;
+  }
+
   .pad0{
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -336,6 +355,12 @@ h1.subtitleDesc2{
   .imgCarruselMedio{
     width: 100% !important;
     height: 230px;
+    object-fit: cover;
+  }
+
+  .imgCarruselMedio2{
+    width: 100% !important;
+    height: 420px;
     object-fit: cover;
   }
 
