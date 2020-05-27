@@ -148,6 +148,11 @@ h1.subtitleDesc2{
   color: #ffffff;
 }
 
+.campamento{
+  background-color: #466874; 
+  color: #ffffff;
+}
+
 .recorridosSection{
  background-image: url(../img/recorridos/background.jpg); 
  background-position: center center;

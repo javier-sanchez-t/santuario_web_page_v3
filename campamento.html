@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+ <link rel="stylesheet" type="text/css" href="./css/custom.css" />
+ <link rel="stylesheet" type="text/css" href="./menu_assets/css/menu_overlay.css" />
+ <!--link rel="stylesheet" type="text/css" href="./css/hover-min.css" /-->
+
+ <title>Bosque Mágico</title>
+</head>
+
+<body>
+
+
+ <!-- NAV BAR-->
+ <nav class="navbar navbar-expand-lg navbar-dark">
+  <button onclick="openNav()" class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarText"
+   aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!--a class="navbar-brand mx-auto" href="/" style="padding-right: 60px;">
+   <img src="img/header/bosque-magico.png" style="width: 120px;">
+  </a-->
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav mr-auto">
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#CONTACTO';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/contacto.png">
+     </a>
+    </li>
+
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#GASTRONOMIA';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/gastronomia.png">
+     </a>
+    </li>
+
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#PAQUETES';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/paquetes.png">
+     </a>
+    </li>
+
+
+    <li class="nav-item active" style="width: 300px;">
+     <img src="img/header/bosque-magico.png" style="width: 100%;">
+    </li>
+
+
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#HOSPEDAJE';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/hospedaje.png">
+     </a>
+    </li>
+
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#CAMPAMENTO';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/campamento.png">
+     </a>
+    </li>
+
+    <li class="nav-item active d-none d-lg-block center">
+     <a class="nav-link hvr-float-shadow" href="#" onclick="location.href='index.html#RECORRIDOS';">
+      <img class="headerOpcionMenuImg" src="img/icons_menu/recorridos.png">
+     </a>
+    </li>
+   </ul>
+  </div>
+ </nav>
+
+
+ <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+   <table style="margin: 0 auto;">
+    <tr class="navOption">
+     <td>
+      <a href="">
+       <img src="./img/recorridos/icon.png" width="35" alt="Recorridos">
+      </a>
+     </td>
+     <td align="left">
+      <a href="#">RECORRIDOS</a>
+     </td>
+    </tr>
+
+    <tr class="navOption">
+     <td class="padT20">
+      <a href="">
+       <img src="./img/campamento/icon.png" width="35" alt="Recorridos">
+      </a>
+     </td>
+     <td align="left" class="padT20">
+      <a href="#">CAMPAMENTO</a>
+     </td>
+    </tr>
+
+    <tr class="navOption">
+     <td class="padT20">
+      <a href="">
+       <img src="./img/hospedaje/icon.png" width="35" alt="Recorridos">
+      </a>
+     </td>
+     <td align="left" class="padT20">
+      <a href="#">HOSPEDAJE</a>
+     </td>
+    </tr>
+
+    <tr class="navOption">
+     <td class="padT20">
+      <a href="">
+       <img src="./img/recorridos/icon.png" width="35" alt="Recorridos">
+      </a>
+     </td>
+     <td align="left" class="padT20">
+      <a href="#">PAQUETES</a>
+     </td>
+    </tr>
+
+    <tr class="navOption">
+     <td class="padT20">
+      <a href="">
+       <img src="./img/recorridos/icon.png" width="35" alt="Recorridos">
+      </a>
+     </td>
+     <td align="left" class="padT20">
+      <a href="#">GASTRONOMÍA</a>
+     </td>
+    </tr>
+
+    <tr class="navOption">
+     <td class="padT20">
+      <a href="">
+       <img src="./img/recorridos/icon.png" width="35" alt="Recorridos">
+      </a>
+     </td>
+     <td align="left" class="padT20">
+      <a href="#">CONTACTO</a>
+     </td>
+    </tr>
+   </table>
+
+  </div>
+ </div>
+
+
+
+ <!--CAMPAMENTO-->
+ <div class="container-fluid sierraNevadaSection">
+  <div class="row sierraNevadaBanner" data-aos="fade-right">
+   <div class="col-12 col-sm-4 order-sm-2 centerOnMobile padT20">
+    <!--img src="./img/recorridos/icon.png" alt="Recorridos" class="logoSection" style="width: 170px;"-->
+   </div>
+   <div class="col-12 col-sm-8 align-self-end order-sm-1 centerOnMobile padB20 padL0"
+    style="padding-bottom: 2%; padding-top: 2%; padding-left: 150px;">
+    <table class="centerTableOnMobile">
+     <tr>
+      <td>
+       <img src="./img/sierra_nevada/bosque-magico-fondo-sierra-nevada.png" alt="Sierra nevada" width="350"
+        class="w75pct">
+      </td>
+     </tr>
+    </table>
+   </div>
+  </div>
+
+  <div class="row" style="padding: 120px 0px 80px 0px;" data-aos="fade-up" id="OPTIONS">
+   <div class="col-6 col-sm-6 col-lg-4 center padB20">
+    <a class="hvr-bubble-float-bottom-blue" id="BTN_CAMPAMENTO_BOUTIQUE"
+     onclick="location.href='campamento.html?option=CAMPAMENTO_BOUTIQUE';">
+     <img src="img/sierra_nevada/campamento_boutique.png" alt="Campamento Boutique" style="width: 200px;"
+      class="optionsSection">
+    </a>
+   </div>
+   <div class="col-6 col-sm-6 col-lg-4 center padB20">
+    <a class="hvr-bubble-float-bottom-blue" id="BTN_CAMPAMENTO"
+     onclick="location.href='campamento.html?option=CAMPAMENTO';">
+     <img src="img/sierra_nevada/campamento.png" alt="Campamento" style="width: 200px;" class="optionsSection">
+    </a>
+   </div>
+   <div class="col-6 col-sm-6 col-lg-4 center">
+    <a class="hvr-bubble-float-bottom-blue" id="BTN_ESPACIO_ACAMPAR"
+    onclick="location.href='campamento.html?option=ESPACIO_ACAMPAR';">
+     <img src="img/sierra_nevada/espacio para acampar.png" alt="Espacio para acampar" style="width: 200px;"
+      class="optionsSection">
+    </a>
+   </div>
+  </div>
+ </div>
+
+
+ <!-- CAMPAMENTO_BOUTIQUE -->
+ <div class="campamento" id="CAMPAMENTO_BOUTIQUE" style="display: none;">
+  <div class="container">
+   <div class="row">
+    <div class="col-12 descriptionText"
+     style="padding-top: 50px; padding-bottom: 25px; border-bottom: 3px solid #efb720;">
+     La zona de campamento Sierra Nevada es un concepto desarrollado por Bosque Mágico con la finalidad de consentir a
+     sus turistas, en este espacio encontrarás baños y regaderas de uso común para los que adquieran el servicio de
+     campamento o espacio para acampar, además de campamento boutique conocido como glamping, este servicio cuenta con
+     WC y regadera en su interior, mismo que hace la diferencia frente a servicios similares y brindan una mayor
+     comodidad durante tu estancia, se encuentra situado en el campo como debe ser un campamento, si buscas una
+     experiencia diferente no cabe duda que esta es la mejor opción cuando visites el Santuario de Luciérnagas con
+     Bosque Mágico.
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-12 center title">
+     Campamento boutique
+    </div>
+    <div class="col-sm-8 col-12 descriptionText padB20" style="text-align: justify; padding-bottom: 20px;">
+     Estructura estilo cabaña con domo de cristal y área de estar exterior con capacidad para dos personas, ubicada en
+     el campo y dentro de ella encontrarás: <br><br>
+     <ul>
+      <li>Una cama matrimonial</li>
+      <li>Una barra con dos bancos</li>
+      <li>Baño</li>
+      <li>Regadera</li>
+      <li>Dos cobijas</li>
+      <li>Dos almohadas</li>
+      <li>Dos kit de higiene</li>
+      <li>Una linterna</li>
+      <li>Dos cargas de leña</li>
+     </ul>
+    </div>
+
+    <div class="col-sm-4 col-12" style="padding-bottom: 30px;">
+     <img src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001.jpg" alt="Luciérnagas"
+      class="img-fluid" style="border-radius: 15px;">
+     <div class="center" style="padding-top: 10px; font-size: 30px;">
+      $1,490.00
+     </div>
+    </div>
+   </div>
+
+   <div class="row" style="padding-bottom: 80px;">
+    <div class="col-sm-6" style="padding-bottom: 30px;">
+     <img class="imgCarruselMedio2 imgDescription"
+      src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-5.jpg" class="img-fluid"
+      alt="Magueyes">
+    </div>
+    <div class="col-sm-6" style="padding-bottom: 30px;">
+     <img class="imgCarruselMedio imgDescription"
+      src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-2.jpg" class="img-fluid"
+      alt="Magueyes" style="margin-bottom: 30px;">
+
+     <img class="imgCarruselMedio imgDescription"
+      src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-3.jpg" class="img-fluid"
+      alt="Magueyes">
+    </div>
+
+    <div class="col-sm-6" style="padding-bottom: 30px;">
+     <img class="imgCarruselMedio imgDescription"
+      src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-5.jpg" class="img-fluid"
+      alt="Magueyes">
+    </div>
+    <div class="col-sm-6" style="padding-bottom: 30px;">
+     <img class="imgCarruselMedio imgDescription"
+      src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-7.jpg" class="img-fluid"
+      alt="Magueyes">
+    </div>
+   </div>
+  </div>
+ </div>
+ <!-- END OF CAMPAMENTO_BOUTIQUE-->
+
+ <!-- CAMPAMENTO -->
+ <div class="campamento" id="CAMPAMENTO" style="display: none;">
+  <div class="container">
+   <div class="row">
+    <div class="col-12 descriptionText"
+     style="padding-top: 50px; padding-bottom: 25px; border-bottom: 3px solid #efb720;">
+     La zona de campamento Sierra Nevada es un concepto desarrollado por Bosque Mágico con la finalidad de consentir a
+     sus turistas, en este espacio encontrarás baños y regaderas de uso común para los que adquieran el servicio de
+     campamento o espacio para acampar, además de campamento boutique conocido como glamping, este servicio cuenta con
+     WC y regadera en su interior, mismo que hace la diferencia frente a servicios similares y brindan una mayor
+     comodidad durante tu estancia, se encuentra situado en el campo como debe ser un campamento, si buscas una
+     experiencia diferente no cabe duda que esta es la mejor opción cuando visites el Santuario de Luciérnagas con
+     Bosque Mágico.
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-12 center title">
+     Campamento
+    </div>
+    <div class="col-sm-8 col-12 descriptionText padB20" style="text-align: justify; padding-bottom: 20px;">
+     Renta de equipo para acampar con capacidad de 2 personas en una zona acondicionada para esta actividad dentro del
+     campo, el ingreso es a partir de la 1:00 pm. y consta de:
+     <br><br>
+     <ul>
+      <li>1 tienda</li>
+      <li>1 colchoneta</li>
+      <li>2 cobijas</li>
+      <li>2 almohadas</li>
+      <li>2 kit de higiene</li>
+      <li>1 linterna</li>
+     </ul>
+    </div>
+
+    <div class="col-sm-4 col-12" style="padding-bottom: 30px;">
+     <img src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001.jpg" alt="Luciérnagas"
+      class="img-fluid" style="border-radius: 15px;">
+     <div class="center" style="padding-top: 10px; font-size: 30px;">
+      $590.00
+     </div>
+    </div>
+   </div>
+
+   <div class="row" style="padding-bottom: 80px;">
+    <div class="col-sm-6" style="padding-bottom: 30px;">
+     <img class="imgCarruselMedio2 imgDescription"
+      src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-5.jpg" class="img-fluid"
+      alt="Magueyes">
+    </div>
+    <div class="col-sm-6" style="padding-bottom: 30px;">
+     <img class="imgCarruselMedio imgDescription"
+      src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-2.jpg" class="img-fluid"
+      alt="Magueyes" style="margin-bottom: 30px;">
+
+     <img class="imgCarruselMedio imgDescription"
+      src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-3.jpg" class="img-fluid"
+      alt="Magueyes">
+    </div>
+
+    <div class="col-sm-6" style="padding-bottom: 30px;">
+     <img class="imgCarruselMedio imgDescription"
+      src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-5.jpg" class="img-fluid"
+      alt="Magueyes">
+    </div>
+    <div class="col-sm-6" style="padding-bottom: 30px;">
+     <img class="imgCarruselMedio imgDescription"
+      src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-7.jpg" class="img-fluid"
+      alt="Magueyes">
+    </div>
+   </div>
+  </div>
+ </div>
+ <!-- END OF CAMPAMENTO-->
+
+ <!-- ESPACIO_ACAMPAR -->
+ <div class="campamento" id="ESPACIO_ACAMPAR" style="display: none;">
+  <div class="container">
+   <div class="row">
+    <div class="col-12 descriptionText"
+     style="padding-top: 50px; padding-bottom: 25px; border-bottom: 3px solid #efb720;">
+     La zona de campamento Sierra Nevada es un concepto desarrollado por Bosque Mágico con la finalidad de consentir a
+     sus turistas, en este espacio encontrarás baños y regaderas de uso común para los que adquieran el servicio de
+     campamento o espacio para acampar, además de campamento boutique conocido como glamping, este servicio cuenta con
+     WC y regadera en su interior, mismo que hace la diferencia frente a servicios similares y brindan una mayor
+     comodidad durante tu estancia, se encuentra situado en el campo como debe ser un campamento, si buscas una
+     experiencia diferente no cabe duda que esta es la mejor opción cuando visites el Santuario de Luciérnagas con
+     Bosque Mágico.
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-12 center title">
+     Espacio para acampar
+    </div>
+    <div class="col-sm-8 col-12 descriptionText padB20" style="text-align: justify; padding-bottom: 20px;">
+     Zona designada para poder realizar la actividad de campamento, en esta opción el precio es por persona y pueden
+     traer todo su equipo para acampar. El ingreso es a partir de las 1:00 pm.
+    </div>
+
+    <div class="col-sm-4 col-12" style="padding-bottom: 30px;">
+     <img src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001.jpg" alt="Luciérnagas"
+      class="img-fluid" style="border-radius: 15px;">
+     <div class="center" style="padding-top: 10px; font-size: 30px;">
+      $149.00
+     </div>
+    </div>
+   </div>
+
+   <div class="row" style="padding-bottom: 80px;">
+    <div class="col-sm-6" style="padding-bottom: 30px;">
+     <img class="imgCarruselMedio2 imgDescription"
+      src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-5.jpg" class="img-fluid"
+      alt="Magueyes">
+    </div>
+    <div class="col-sm-6" style="padding-bottom: 30px;">
+     <img class="imgCarruselMedio imgDescription"
+      src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-2.jpg" class="img-fluid"
+      alt="Magueyes" style="margin-bottom: 30px;">
+
+     <img class="imgCarruselMedio imgDescription"
+      src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-3.jpg" class="img-fluid"
+      alt="Magueyes">
+    </div>
+
+    <div class="col-sm-6" style="padding-bottom: 30px;">
+     <img class="imgCarruselMedio imgDescription"
+      src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-5.jpg" class="img-fluid"
+      alt="Magueyes">
+    </div>
+    <div class="col-sm-6" style="padding-bottom: 30px;">
+     <img class="imgCarruselMedio imgDescription"
+      src="./img/sierra_nevada/Campamento/bosque-magico-santuario-de-las-luciernegas-A001-7.jpg" class="img-fluid"
+      alt="Magueyes">
+    </div>
+   </div>
+  </div>
+ </div>
+ <!-- END OF ESPACIO_ACAMPAR-->
+
+ <!--END OF CAMPAMENTO-->
+
+
+
+
+ <!--FOOTER -->
+ <div class="container-fluid footer" id="CONTACTO">
+  <div class="row">
+   <div class="col-12 col-sm-6 col-lg-3">
+    <div style="width: 100%; text-align: center;">
+     <img src="./img/Footer/bosque magico.png" alt="Bosque Mágico" width="150">
+    </div>
+    <div class="center" style="padding-top: 15px;">
+     <table align="center">
+      <tr>
+       <td width="40">
+        <a href="https://www.facebook.com/luciernagasbosquemagico/" target="_blank">
+         <img src="./img/Footer/facebook.png" alt="Facebook" width="25">
+        </a>
+       </td>
+       <td width="40">
+        <a href="https://www.instagram.com/luciernagasbosquemagico?r=nametag" target="_blank">
+         <img src="./img/Footer/instagram.png" alt="Instagram" width="25">
+        </a>
+       </td>
+       <td width="40">
+        <a href="https://luciernagasbosquemagico.blogspot.com/" target="_blank">
+         <img src="./img/Footer/blog.png" alt="Blog" width="25">
+        </a>
+       </td>
+      </tr>
+
+     </table>
+    </div>
+   </div>
+
+   <div class="col-12 col-sm-6 col-lg-3 padT20">
+    <div style="width: 100%;">
+     <table width="100%">
+      <tr>
+       <td style="border-bottom: solid 2px #977fa3;">
+        INFORMES Y RESERVAS
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div>
+     <a href="mailto:reservas@bosquemagico.com.mx" target="_blank" class="footerLink">
+      <img src="./img/Footer/sobre.png" alt="Teléfono" width="20"> reservas@bosquemagico.com.mx
+     </a>
+    </div>
+    <div>
+     <a href="tel:+52-748-105-8284" class="footerLink">
+      <img src="./img/Footer/llamada.png" alt="Teléfono" width="20"> 748 105 8284
+     </a>
+    </div>
+    <div>
+     <a href="tel:+52-748-106-0111" class="footerLink">
+      <img src="./img/Footer/llamada.png" alt="Teléfono" width="20"> 748 106 0111
+     </a>
+    </div>
+
+    <div style="width: 100%; padding-top: 30px;">
+     <table width="100%">
+      <tr>
+       <td style="border-bottom: solid 2px #977fa3;">
+        DESCARGAS
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div>
+     <a href="#" target="_blank" class="footerLink">
+      PAQUETES
+     </a>
+    </div>
+    <div>
+     <a href="./img/informacion/Recomendaciones.jpg" download class="footerLink">
+      RECOMENDACIONES
+     </a>
+    </div>
+    <div>
+     <a href="./img/informacion/Reglamento.jpg" download class="footerLink">
+      REGLAMENTO
+     </a>
+    </div>
+   </div>
+
+
+   <div class="col-12 col-sm-6 col-lg-3 padT20 padL20" style="padding-left: 40px;">
+    <div style="padding-bottom: 15px;">
+     <a href="https://www.e-tsw.com/Vuelos/Busqueda?af=AF-TUGV&ot=0&di=0&ln=esp&cu=PE&alf=0&GAProd=AV" target="_blank"
+      class="footerLink">
+      <img src="./img/Footer/vuelos.png" alt="Vuelos" width="20">&nbsp;&nbsp; VUELOS
+     </a>
+    </div>
+    <div style="padding-bottom: 15px;">
+     <a href="#" data-toggle="modal" data-target="#facturaModal" onclick="clearModalFacturacion();" class="footerLink">
+      <img src="./img/Footer/facturacion.png" alt="Facturación" width="15">&nbsp;&nbsp; FACTURACIÓN
+     </a>
+    </div>
+    <div style="padding-bottom: 15px;">
+     <a href="https://www.calendario-365.es/luna/lunar-fases.html" target="_blank" class="footerLink">
+      <img src="./img/Footer/clima.png" alt="Calendario lunar" width="20">&nbsp;&nbsp; CALENDARIO LUNAR
+     </a>
+    </div>
+    <div style="padding-bottom: 15px;">
+     <a
+      href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x85d1d35efc2ddb45:0xf5b139dcffbbbe83?source=g.page.m.av"
+      target="_blank" class="footerLink">
+      <img src="./img/Footer/como llegar.png" alt="Como llegar" width="17">&nbsp;&nbsp; COMO LLEGAR
+     </a>
+    </div>
+   </div>
+
+
+   <div class="col-12 col-sm-6 col-lg-3 centerOnMobile padT20">
+    <div>
+     <img src="./img/sierra_nevada/bosque-magico-fondo-sierra-nevada.png" alt="Sierra Nevada" width="150">
+     <br class="desktop">
+     <br class="desktop">
+     <br class="desktop">
+     &nbsp;&nbsp;
+     <img src="./img/mercado_estacion/bosque-magico-fondo-mercado-la-estacion.png" alt="Sierra Nevada" width="150">
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="container-fluid footer2 padT20 center">
+  <div style="padding-bottom: 10px;">
+   <img src="./img/Footer/bosque magico.png" alt="Bosque mágico" width="100">
+  </div>
+  <div>
+   &copy; 2020 Derechos reservados, Bosque Mágico
+  </div>
+ </div>
+ <!--END OF FOOTER -->
+
+ <!-- MODAL FACTURA -->
+ <div class="modal fade" id="facturaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-lg" role="document" id="facturaModalContent">
+   <div class="modal-content">
+    <div class="modal-header">
+     <div id="facturaModalTittle">
+      <img src="./img/header/bosque-magico.png" id="factModalLogo" width="150">
+      <br><br>
+      <h5 class="modal-title" id="exampleModalLabel">
+       FACTURAS
+      </h5>
+      <h5>
+       Ingrese los siguientes datos para facturar
+      </h5>
+     </div>
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+     </button>
+    </div>
+    <div class="modal-body">
+     <!--div class="alert alert-secondary" role="alert">
+             This is a secondary alert—check it out!
+           </div-->
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="noReservacion" class="col-sm-3 col-form-label">*No.
+       Reservación:</label>
+      <div class="col-sm-7">
+       <input class="form-control" id="noReservacion">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="fechaReservacion" class="col-sm-3 col-form-label">*Fecha de viaje:</label>
+      <div class="col-sm-7">
+       <input type="date" class="form-control" id="fechaReservacion">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="cantidad" class="col-sm-3 col-form-label">*Cantidad:</label>
+      <div class="col-sm-7">
+       <input type="number" class="form-control" id="cantidad" min="1">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="rfc" class="col-sm-3 col-form-label">RFC:</label>
+      <div class="col-sm-7">
+       <input type="text" class="form-control" id="rfc">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-11">
+       <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="extranjero">
+        <label class="form-check-label" for="extranjero">
+         Extranjeros
+        </label>
+       </div>
+      </div>
+     </div>
+
+     <div class="form-group row">
+      <div class="col-sm-12" style="text-align: right;">
+       <button class="btn btn-primary" onclick="sendFacturasForm();">Solicitar factura</button>
+       <button data-dismiss="modal" class="btn btn-danger">Cancelar</button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+
+ </div>
+ <!--END OF MODAL FACTURA -->
+
+
+ <!-- JS, Popper.js, and jQuery -->
+ <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ <script src="./menu_assets/js/menu_overlay.js"></script>
+ <script src="./js/smtp.js"></script>
+
+ <!--SCROLL EFECTS-->
+ <link href="./css/AOS.css" rel="stylesheet">
+ <script src="./js/AOS.js"></script>
+ <script>
+  AOS.init();
+ </script>
+
+ <script src="./js/custom.js"></script>
+ <script src="./js/campamento.js"></script>
+</body>
+
+</html>
