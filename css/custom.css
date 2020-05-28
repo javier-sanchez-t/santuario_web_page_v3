@@ -153,6 +153,11 @@ h1.subtitleDesc2{
   color: #ffffff;
 }
 
+.hospedaje{
+  background-color: #48445d; 
+  color: #ffffff;
+}
+
 .recorridosSection{
  background-image: url(../img/recorridos/background.jpg); 
  background-position: center center;
