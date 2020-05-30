@@ -18,7 +18,7 @@
 
 
  <!-- NAV BAR-->
- <nav class="navbar navbar-expand-lg navbar-dark">
+ <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
   <button onclick="openNav()" class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarText"
    aria-expanded="false" aria-label="Toggle navigation">
    <span class="navbar-toggler-icon"></span>
@@ -50,7 +50,9 @@
 
 
     <li class="nav-item active" style="width: 300px;">
-     <img src="img/header/bosque-magico.png" style="width: 100%;">
+     <a onclick="location.href='index.html';">
+      <img src="img/header/bosque-magico.png" style="width: 100%;">
+     </a>
     </li>
 
 
@@ -187,7 +189,7 @@
    </div>
    <div class="col-6 col-sm-6 col-lg-4 center">
     <a class="hvr-bubble-float-bottom-blue" id="BTN_ESPACIO_ACAMPAR"
-    onclick="location.href='campamento.html?option=ESPACIO_ACAMPAR';">
+     onclick="location.href='campamento.html?option=ESPACIO_ACAMPAR';">
      <img src="img/sierra_nevada/espacio para acampar.png" alt="Espacio para acampar" style="width: 200px;"
       class="optionsSection">
     </a>

@@ -35,6 +35,10 @@ body{
  background-attachment: fixed;
 }
 
+a{
+  cursor: pointer;
+}
+
 .show{
   display: block !important;
 }
