@@ -149,6 +149,8 @@ h1.subtitleDesc2{
 }
 
 .card-body{
+  border-radius: 3px;
+  background-color: #e6eaed;
   color: #000000;
 }
 
@@ -372,6 +374,14 @@ h1.subtitleDesc2{
 
  .padB20{
   padding-bottom: 20px !important;
+  }
+
+  .showOnMobile{
+    display: block !important;
+  }
+
+  .hideOnMobile{
+    display: none !important;
   }
 }
 
