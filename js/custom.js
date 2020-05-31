@@ -5,6 +5,7 @@ $('#INICIO_LINK').click(function () {
 });
 
 function goToSection(sectionName) {
+ $('#CLOSE').click();
  $("html, body").delay(0).animate({
   scrollTop: $(sectionName).offset().top
  }, 1000);
