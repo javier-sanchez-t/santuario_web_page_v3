@@ -1,3 +1,11 @@
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 50) {
+        $('.navbar').addClass('fixed-top');
+    } else {
+        $('.navbar').removeClass('fixed-top');
+    }
+});
+
 $('#INICIO_LINK').click(function () {
  $("html, body").delay(0).animate({
   scrollTop: $('#INICIO').offset().top
