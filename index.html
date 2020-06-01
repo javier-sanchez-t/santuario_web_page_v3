@@ -10,12 +10,14 @@
   crossorigin="anonymous"></script>
  <script src="./js/loadingoverlay.min.js"></script>
  <script>
-  var tmrReady = setInterval(isPageFullyLoaded, 100);
   $.LoadingOverlay("show");
+  var tmrReady = setInterval(isPageFullyLoaded, 1000);
   
   function isPageFullyLoaded() {
    console.log(document.readyState);
    if (document.readyState == "complete") {
+    console.log("completo ========>");
+    
     $.LoadingOverlay("hide");
     clearInterval(tmrReady);
    }
