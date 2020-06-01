@@ -12,9 +12,9 @@
  <script>
   var tmrReady = setInterval(isPageFullyLoaded, 100);
   $.LoadingOverlay("show");
-  console.log(document.readyState);
   
   function isPageFullyLoaded() {
+   console.log(document.readyState);
    if (document.readyState == "complete") {
     $.LoadingOverlay("hide");
     clearInterval(tmrReady);
