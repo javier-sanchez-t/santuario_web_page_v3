@@ -183,6 +183,11 @@ h1.subtitleDesc2{
   color: #ffffff;
 }
 
+.mercado{
+  background-color: #9d7a5a; 
+  color: #ffffff;
+}
+
 .recorridosSection{
  background-image: url(../img/recorridos/background.jpg); 
  background-position: center center;
