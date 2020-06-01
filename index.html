@@ -11,10 +11,9 @@
  <script src="./js/loadingoverlay.min.js"></script>
  <script>
   var tmrReady = setInterval(isPageFullyLoaded, 100);
-
+  $.LoadingOverlay("show");
   function isPageFullyLoaded() {
    if (document.readyState != "complete") {
-    $.LoadingOverlay("show");
     clearInterval(tmrReady);
    }else{
     $.LoadingOverlay("hide");
