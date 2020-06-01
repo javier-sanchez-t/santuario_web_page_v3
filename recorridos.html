@@ -6,6 +6,25 @@
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+ <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+ <script src="./js/loadingoverlay.min.js"></script>
+ <script>
+  var tmrReady = setInterval(isPageFullyLoaded, 1000);
+  var interactive = false;
+
+  function isPageFullyLoaded() {
+   if (document.readyState == "interactive" && !interactive) {
+    $.LoadingOverlay("show");
+    interactive = true;
+   }
+
+   if (document.readyState == "complete") {
+    $.LoadingOverlay("hide");
+    clearInterval(tmrReady);
+   }
+  }
+ </script>
  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
  <link rel="stylesheet" type="text/css" href="./css/custom.css" />
  <link rel="stylesheet" type="text/css" href="./menu_assets/css/menu_overlay.css" />
@@ -19,9 +38,9 @@
 
  <!-- NAV BAR-->
  <a onclick="location.href='index.html';" class="logo logoMobile" style="display: none;">
-		<img src="img/header/bosque-magico.png" style="width: 120px;">
+  <img src="img/header/bosque-magico.png" style="width: 120px;">
  </a>
- 
+
  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
   <button onclick="openNav()" class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarText"
    aria-expanded="false" aria-label="Toggle navigation">
@@ -208,7 +227,8 @@
     <div class="col-12 descriptionText"
      style="padding-top: 50px; padding-bottom: 25px; border-bottom: 3px solid #efb720;">
      Los recorridos guiados son el de Bosque y Luciérnagas y Magueyes y Pulque a fin de proporcionar todo aquella
-     información relevante de cada actividad, además de cuidar de los viajeros para que su experiencia sea más grata.
+     información relevante de cada actividad, además de cuidar de los viajeros para que su experiencia sea más
+     grata.
      Para el caso de traslado en Tranvía y Val’ Quirico son servicios que tomas por cuenta propia para disfrutar al
      máximo con tu compañía de viaje.
     </div>
@@ -219,11 +239,14 @@
       alt="Bosque mágico y luciérnagas">
     </div>
     <div class="col-sm-8 col-12 padB20 descriptionText">
-     Avistamiento de luciérnagas en la zona ecológica de Nanacamilpa Tlaxcala el horario de atención de recorrido es de
+     Avistamiento de luciérnagas en la zona ecológica de Nanacamilpa Tlaxcala el horario de atención de recorrido
+     es de
      7:00 pm a 10:00 pm, la única salida es aproximadamente a las 7:30 pm (cuando cae la noche), con una duración
      promedio de 40 a 60 min., cuenta con estacionamiento y al finalizar se obsequia una pieza de pan y un café.
-     Este recorrido es el principal motivo de viaje a Nanacamilpa Tlaxcala mejor conocido como Santuario de Luciérnagas,
-     en el disfrutarás de una noche mágica la cual es difícil de describir ya que no se puede explicar con tal detalle
+     Este recorrido es el principal motivo de viaje a Nanacamilpa Tlaxcala mejor conocido como Santuario de
+     Luciérnagas,
+     en el disfrutarás de una noche mágica la cual es difícil de describir ya que no se puede explicar con tal
+     detalle
      sino hasta vivir la experiencia, básicamente lo que se puede observar es el cortejo de luciérnagas previo a su
      apareamiento, es un deleite a la pupila que no puedes dejar pasar y que sin duda nunca olvidarás.
     </div>
@@ -269,7 +292,8 @@
     <div class="col-12 descriptionText"
      style="padding-top: 50px; padding-bottom: 25px; border-bottom: 3px solid #efb720;">
      Los recorridos guiados son el de Bosque y Luciérnagas y Magueyes y Pulque a fin de proporcionar todo aquella
-     información relevante de cada actividad, además de cuidar de los viajeros para que su experiencia sea más grata.
+     información relevante de cada actividad, además de cuidar de los viajeros para que su experiencia sea más
+     grata.
      Para el caso de traslado en Tranvía y Val’ Quirico son servicios que tomas por cuenta propia para disfrutar al
      máximo con tu compañía de viaje.
     </div>
@@ -279,11 +303,15 @@
      Magueyes y pulque
     </div>
     <div class="col-sm-8 col-12 descriptionText padB20" style="text-align: justify;">
-     Ruta del pulque de carácter cultural que gira entorno a la planta del maguey y sus propiedades y se realiza dentro
-     de un rancho productor magueyero con una duración promedio de 40 a 60 min, en un horario de atención de 12:00 pm a
+     Ruta del pulque de carácter cultural que gira entorno a la planta del maguey y sus propiedades y se realiza
+     dentro
+     de un rancho productor magueyero con una duración promedio de 40 a 60 min, en un horario de atención de 12:00
+     pm a
      5:00 pm. Las salidas son aproximadamente cada 30 minutos, esto acorde a la demanda del servicio.
-     En este recorrido conocerás el proceso de elaboración del pulque, capado del maguey así como productos derivados de
-     la planta del maguey, sin dejar de lado los mitos que existen sobre la elaboración de esta bebida milenaria también
+     En este recorrido conocerás el proceso de elaboración del pulque, capado del maguey así como productos
+     derivados de
+     la planta del maguey, sin dejar de lado los mitos que existen sobre la elaboración de esta bebida milenaria
+     también
      conocida como bebida de los dioses.
     </div>
 
@@ -334,7 +362,8 @@
     <div class="col-12 descriptionText"
      style="padding-top: 50px; padding-bottom: 25px; border-bottom: 3px solid #efb720;">
      Los recorridos guiados son el de Bosque y Luciérnagas y Magueyes y Pulque a fin de proporcionar todo aquella
-     información relevante de cada actividad, además de cuidar de los viajeros para que su experiencia sea más grata.
+     información relevante de cada actividad, además de cuidar de los viajeros para que su experiencia sea más
+     grata.
      Para el caso de traslado en Tranvía y Val’ Quirico son servicios que tomas por cuenta propia para disfrutar al
      máximo con tu compañía de viaje.
     </div>
@@ -345,9 +374,12 @@
       alt="Bosque mágico y luciérnagas">
     </div>
     <div class="col-sm-8 col-12 padB20 descriptionText" style="text-align: justify;">
-     Destino recomendado para complementar tu viaje, mismo que te transportará a la Campiña Europea, a una distancia
-     promedio de 60 km del Santuario de Luciérnagas, en el cual podrá disfrutar de la arquitectura y gastronomía del
-     complejo, se localiza en el municipio de Nativitas y está a 60 min aproximadamente de la ciudad de Nanacamilpa.
+     Destino recomendado para complementar tu viaje, mismo que te transportará a la Campiña Europea, a una
+     distancia
+     promedio de 60 km del Santuario de Luciérnagas, en el cual podrá disfrutar de la arquitectura y gastronomía
+     del
+     complejo, se localiza en el municipio de Nativitas y está a 60 min aproximadamente de la ciudad de
+     Nanacamilpa.
     </div>
 
     <div class="col-sm-4 col-12" style="padding-bottom: 30px;">
@@ -392,7 +424,8 @@
     <div class="col-12 descriptionText"
      style="padding-top: 50px; padding-bottom: 25px; border-bottom: 3px solid #efb720;">
      Los recorridos guiados son el de Bosque y Luciérnagas y Magueyes y Pulque a fin de proporcionar todo aquella
-     información relevante de cada actividad, además de cuidar de los viajeros para que su experiencia sea más grata.
+     información relevante de cada actividad, además de cuidar de los viajeros para que su experiencia sea más
+     grata.
      Para el caso de traslado en Tranvía y Val’ Quirico son servicios que tomas por cuenta propia para disfrutar al
      máximo con tu compañía de viaje.
     </div>
@@ -402,11 +435,15 @@
      Tranvía - Circuito Monumentos y Haciendas
     </div>
     <div class="col-sm-8 col-12 padB20 descriptionText" style="text-align: justify;">
-     Transporte turístico destinado para trasladar a los usuarios en sus servicios adquiridos, como son el recorrido de
-     Bosque y Luciérnagas y/o Magueyes y Pulque, este traslado se da en un minibús con diseño de tranvía, las salidas de
-     este servicio están programadas cada 60 min., aproximadamente (dependiendo de la cantidad de pasajeros) y será de
+     Transporte turístico destinado para trasladar a los usuarios en sus servicios adquiridos, como son el
+     recorrido de
+     Bosque y Luciérnagas y/o Magueyes y Pulque, este traslado se da en un minibús con diseño de tranvía, las
+     salidas de
+     este servicio están programadas cada 60 min., aproximadamente (dependiendo de la cantidad de pasajeros) y será
+     de
      uso exclusivo dentro del municipio de Nanacamilpa.
-     La capacidad máxima del tranvía es de 22 personas y es posible arrendarlo en su totalidad para trasladar a tu grupo
+     La capacidad máxima del tranvía es de 22 personas y es posible arrendarlo en su totalidad para trasladar a tu
+     grupo
      o si vienes en familia, pareja o solo puedes consultar las salidas programadas para cada recorrido. Es posible
      solicitar el recorrido guiado denominado Circuito Monumentos y Haciendas para que conozcas la historia de
      Nanacamilpa pasando por los puntos más emblemáticos del sitio.
@@ -672,8 +709,6 @@
 
 
  <!-- JS, Popper.js, and jQuery -->
- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
