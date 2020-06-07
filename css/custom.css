@@ -507,6 +507,20 @@ h1.subtitleDesc2{
     bottom: 10px !important;
     width: 65px !important;
    }
+
+   .phone{
+    display: block !important;
+    position: fixed;
+    bottom: 10px;
+    right: 50%;
+    margin-right: -50px;
+    z-index: 10000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+   }
 }
 
 
