@@ -12,9 +12,9 @@
  <script>
   var tmrReady = setInterval(isPageFullyLoaded, 1000);
   var interactive = false;
-  
+
   function isPageFullyLoaded() {
-   if(document.readyState == "interactive" && !interactive){
+   if (document.readyState == "interactive" && !interactive) {
     $.LoadingOverlay("show");
     interactive = true;
    }
@@ -780,27 +780,32 @@
   <div class="row" style="padding: 120px 0px 80px 0px;" data-aos="fade-up">
    <div class="col-6 col-sm-6 col-lg-2 center padB20">
     <a class="hvr-bubble-float-bottom-purple" onclick="location.href='paquetes.html?option=CAMPAMENTO';">
-     <img src="img/paquetes/bosque-magico-boton-paquete-campamento.png" alt="Campamento" style="width: 200px;" class="optionsSection">
+     <img src="img/paquetes/bosque-magico-boton-paquete-campamento.png" alt="Campamento" style="width: 200px;"
+      class="optionsSection">
     </a>
    </div>
    <div class="col-6 col-sm-6 col-lg-3 center padB20">
     <a class="hvr-bubble-float-bottom-purple" onclick="location.href='paquetes.html?option=CAMPAMENTO_BOUTIQUE';">
-     <img src="img/paquetes/bosque-magico-boton-paquete-boutique.png" alt="Campamento Boutique" style="width: 200px;" class="optionsSection">
+     <img src="img/paquetes/bosque-magico-boton-paquete-boutique.png" alt="Campamento Boutique" style="width: 200px;"
+      class="optionsSection">
     </a>
    </div>
    <div class="col-6 col-sm-6 col-lg-2 center padB20">
     <a class="hvr-bubble-float-bottom-purple" onclick="location.href='paquetes.html?option=HOTEL_ALBA';">
-     <img src="img/paquetes/bosque-magico-boton-paquete-alba.png" alt="Hotel Alba" style="width: 200px;" class="optionsSection">
+     <img src="img/paquetes/bosque-magico-boton-paquete-alba.png" alt="Hotel Alba" style="width: 200px;"
+      class="optionsSection">
     </a>
    </div>
    <div class="col-6 col-sm-6 col-lg-3 center padB20">
     <a class="hvr-bubble-float-bottom-purple" onclick="location.href='paquetes.html?option=POSADA_PINOS';">
-     <img src="img/paquetes/bosque-magico-boton-paquete-residencial.png" alt="Posada los pinos" style="width: 200px;" class="optionsSection">
+     <img src="img/paquetes/bosque-magico-boton-paquete-residencial.png" alt="Posada los pinos" style="width: 200px;"
+      class="optionsSection">
     </a>
    </div>
    <div class="col-6 col-sm-6 col-lg-2 center">
     <a class="hvr-bubble-float-bottom-purple" onclick="location.href='paquetes.html?option=RANCHO_TORRE';">
-     <img src="img/paquetes/bosque-magico-boton-paquete-rancho.png" alt="Rancho la torre" style="width: 200px;" class="optionsSection">
+     <img src="img/paquetes/bosque-magico-boton-paquete-rancho.png" alt="Rancho la torre" style="width: 200px;"
+      class="optionsSection">
     </a>
    </div>
   </div>
@@ -899,6 +904,11 @@
       <img src="./img/Footer/llamada.png" alt="Teléfono" width="20"> 748 106 0111
      </a>
     </div>
+    <div>
+     <a href="#" data-toggle="modal" data-target="#agenciasModal" onclick="clearModalAgencias();" class="footerLink">
+      NEGOCIOS
+     </a>
+    </div>
 
     <div style="width: 100%; padding-top: 30px;">
      <table width="100%">
@@ -976,14 +986,92 @@
  </div>
  <!--END OF FOOTER -->
 
+ <!-- MODAL AGENCIAS -->
+ <div class="modal fade" id="agenciasModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-lg" role="document" id="agenciasModalContent">
+   <div class="modal-content modal-content-agencias">
+    <div class="modal-header">
+     <div class="modalTittle">
+      <img src="./img/header/bosque-magico.png" id="factModalLogo" width="150">
+      <br><br>
+      <h5 class="modal-title" id="exampleModalLabel">
+       AGENCIAS
+      </h5>
+      <h5>
+       Ingrese la siguiente información, pronto te contactaremos!
+      </h5>
+     </div>
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+     </button>
+    </div>
+    <div class="modal-body">
+     <!--div class="alert alert-secondary" role="alert">
+             This is a secondary alert—check it out!
+           </div-->
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="nombreAgencia" class="col-sm-3 col-form-label">*Nombre de contacto o empresa:</label>
+      <div class="col-sm-7">
+       <input class="form-control" id="nombreAgencia">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="fechaAgencias" class="col-sm-3 col-form-label">*Fecha de viaje:</label>
+      <div class="col-sm-7">
+       <input type="date" class="form-control" id="fechaAgencias">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="noVisitantes" class="col-sm-3 col-form-label">*Número de visitantes:</label>
+      <div class="col-sm-7">
+       <input type="text" class="form-control" id="noVisitantes" min="1">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="telefonoAgencias" class="col-sm-3 col-form-label">*Teléfono:</label>
+      <div class="col-sm-7">
+       <input type="tel" class="form-control" id="telefonoAgencias">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+     <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <label for="correoAgencias" class="col-sm-3 col-form-label">*Correo:</label>
+      <div class="col-sm-7">
+       <input type="email" class="form-control" id="correoAgencias">
+      </div>
+      <div class="col-sm-1"></div>
+     </div>
+
+     <div class="form-group row">
+      <div class="col-sm-12" style="text-align: right;">
+       <button class="btn btn-primary" onclick="sendAgenciasForm();">Solicitar información</button>
+       <button data-dismiss="modal" class="btn btn-danger">Cancelar</button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!--END OF MODAL AGENCIAS -->
+
  <!-- MODAL FACTURA -->
  <div class="modal fade" id="facturaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
 
   <div class="modal-dialog modal-lg" role="document" id="facturaModalContent">
-   <div class="modal-content">
+   <div class="modal-content modal-content-facturas">
     <div class="modal-header">
-     <div id="facturaModalTittle">
+     <div class="modalTittle">
       <img src="./img/header/bosque-magico.png" id="factModalLogo" width="150">
       <br><br>
       <h5 class="modal-title" id="exampleModalLabel">
@@ -1064,7 +1152,7 @@
  <a href="tel:+52-748-105-8284">
   <img src="./img/icons/telefono_3.png" alt="Telefono" width="100" style="display: none;" class="phone">
  </a>
- 
+
  <!-- SCROLL TOP-->
  <img id="BTN_TOP" src="./img/icons/flecha_arriba_2.png" alt="Flecha" width="70">
 

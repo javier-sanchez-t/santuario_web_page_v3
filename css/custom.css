@@ -352,19 +352,26 @@ h1.subtitleDesc2{
   text-decoration: none;
 }
 
-#facturaModalTittle{
+.modalTittle{
   text-align: center;
   width: 100%;
 }
 
-.modal-content{
+.modal-content-facturas{
   background-image: url("../img/luciernagas/bosque-magico-luciernagas-009.jpg");
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover; 
 }
 
-#facturaModal{
+.modal-content-agencias{
+  background-image: url("../img/luciernagas/bosque-magico-luciernagas-003.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover; 
+}
+
+#facturaModal, #agenciasModal{
   color: #ffffff;
 }
 
