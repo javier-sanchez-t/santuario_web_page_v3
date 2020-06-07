@@ -101,3 +101,20 @@ function sendFacturasForm() {
   }
  );
 }
+
+
+$('#BTN_TOP').click(function () {
+    $("html, body").delay(0).animate({
+     scrollTop:0
+    }, 1000);
+});
+
+window.onscroll = function() {scrollFunction()};
+mybutton = document.getElementById("BTN_TOP");
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
