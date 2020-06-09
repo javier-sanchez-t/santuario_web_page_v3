@@ -744,3 +744,74 @@ h1.subtitleDesc2{
 #agenciasModal, #facturaModal{
   z-index: 1000000000 !important;
 }
+
+.phoneIcon{
+  background-size: 20px 20px;
+  background-image: url('../img/Footer/llamada.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.parentPhone:hover .phoneIcon{
+  background-image: url('../img/Footer/llamada_2.png');
+}
+
+.emailIcon{
+  background-size: 20px 20px;
+  background-image: url('../img/Footer/sobre.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.emailParent:hover .emailIcon{
+  background-size: 20px 15px;
+  background-image: url('../img/Footer/sobre_2.png');
+}
+
+.vuelosIcon{
+  background-size: 20px 20px;
+  background-image: url('../img/Footer/vuelos.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.vuelosParent:hover .vuelosIcon{
+  background-size: 20px 20px;
+  background-image: url('../img/Footer/vuelos_2.png');
+}
+
+.facturacionIcon{
+  background-size: 20px 20px;
+  background-image: url('../img/Footer/facturacion.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facturacionParent:hover .facturacionIcon{
+  background-size: 20px 20px;
+  background-image: url('../img/Footer/facturacion_2.png');
+}
+
+.calendarioIcon{
+  background-size: 20px 20px;
+  background-image: url('../img/Footer/calendario\ lunar.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.calendarioParent:hover .calendarioIcon{
+  background-size: 20px 20px;
+  background-image: url('../img/Footer/calendario_2.png');
+}
+
+.llegarIcon{
+  background-size: 20px 20px;
+  background-image: url('../img/Footer/como\ llegar.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.llegarParent:hover .llegarIcon{
+  background-size: 20px 20px;
+  background-image: url('../img/Footer/llegar_2.png');
+}
