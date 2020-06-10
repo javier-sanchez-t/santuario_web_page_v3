@@ -209,7 +209,7 @@ h1.subtitleDesc2{
 }
 
 .sierraNevadaSection{
-  background-image: url(../img/sierra_nevada/background.jpg); 
+  background-image: url(../img/sierra_nevada/background.png); 
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
@@ -231,7 +231,7 @@ h1.subtitleDesc2{
  }
 
  .paquetesSection{
-  background-image: url(../img/carrucel_principal/bosque-magico-paquetes-platino.jpg); 
+  background-image: url(../img/paquetes/background.jpg); 
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
@@ -814,4 +814,40 @@ h1.subtitleDesc2{
 .llegarParent:hover .llegarIcon{
   background-size: 20px 20px;
   background-image: url('../img/Footer/llegar_2.png');
+}
+
+.facebookIcon{
+  background-size: 25px 25px;
+  background-image: url('../img/Footer/facebook.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facebookParent:hover .facebookIcon{
+  background-size: 20px 20px;
+  background-image: url('../img/Footer/facebook_2.png');
+}
+
+.instagramIcon{
+  background-size: 25px 25px;
+  background-image: url('../img/Footer/instagram.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instagramParent:hover .instagramIcon{
+  background-size: 20px 20px;
+  background-image: url('../img/Footer/instagram_2.png');
+}
+
+.bloggerIcon{
+  background-size: 25px 25px;
+  background-image: url('../img/Footer/blog.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bloggerParent:hover .bloggerIcon{
+  background-size: 20px 20px;
+  background-image: url('../img/Footer/blogger_2.png');
 }
