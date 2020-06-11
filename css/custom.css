@@ -204,7 +204,7 @@ h1.subtitleDesc2{
  width: 100%;
  /*object-fit: cover;*/
  background-size: cover;
- padding-top: 50px;
+ padding-top: 90px;
  border-bottom: solid 5px #ffffff;
 }
 
@@ -850,4 +850,16 @@ h1.subtitleDesc2{
 .bloggerParent:hover .bloggerIcon{
   background-size: 20px 20px;
   background-image: url('../img/Footer/blogger_2.png');
+}
+
+.whatsIcon{
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../img/Footer/whatsapp.png');
+}
+
+.whatsIcon:hover{
+  background-size: 20px 20px;
+  background-image: url('../img/Footer/whatsapp_2.png');
 }
