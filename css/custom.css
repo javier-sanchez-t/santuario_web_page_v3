@@ -204,7 +204,7 @@ h1.subtitleDesc2{
  width: 100%;
  /*object-fit: cover;*/
  background-size: cover;
- padding-top: 90px;
+ padding-top: 120px;
  border-bottom: solid 5px #ffffff;
 }
 
@@ -215,7 +215,7 @@ h1.subtitleDesc2{
   width: 100%;
   /*object-fit: cover;*/
   background-size: cover;
-  padding-top: 50px;
+  padding-top: 120px;
   border-bottom: solid 5px #ffffff;
  }
 
@@ -226,7 +226,7 @@ h1.subtitleDesc2{
   width: 100%;
   /*object-fit: cover;*/
   background-size: cover;
-  padding-top: 50px;
+  padding-top: 120px;
   border-bottom: solid 5px #ffffff;
  }
 
@@ -237,7 +237,7 @@ h1.subtitleDesc2{
   width: 100%;
   /*object-fit: cover;*/
   background-size: cover;
-  padding-top: 50px;
+  padding-top: 120px;
   border-bottom: solid 5px #ffffff;
  }
 
@@ -275,7 +275,7 @@ h1.subtitleDesc2{
   width: 100%;
   /*object-fit: cover;*/
   background-size: cover;
-  padding-top: 50px;
+  padding-top: 120px;
   border-bottom: solid 5px #ffffff;
  }
 
@@ -285,7 +285,7 @@ h1.subtitleDesc2{
   line-height: 50px; 
   font-weight: bold; 
   border-bottom: solid 4px #ffffff; 
-  padding-bottom: 8px;
+  padding-bottom: 0px;
 }
 
 .descriptionText{
@@ -494,6 +494,10 @@ h1.subtitleDesc2{
 
   .padL0{
     padding-left: 0px !important; 
+  }
+
+  .padR0{
+    padding-right: 0px !important; 
   }
 
   .padL20{
