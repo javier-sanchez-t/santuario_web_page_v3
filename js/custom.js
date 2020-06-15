@@ -69,13 +69,13 @@ function clearModalAgencias() {
  document.getElementById("correoAgencias").value = "";
 }
 
-function sendEmail(subject, bodyEmail, modalName) {
+function sendEmail(subject, bodyEmail, modalName, to) {
  $.LoadingOverlay("show");
 
  Email.send({
-  SecureToken: "33cc3fc4-cb90-43ba-b307-52d742d1ec54",
-  To: 'jefe10jav@gmail.com',
-  From: "jefe10jav@gmail.com",
+  SecureToken: "f69ef3a3-f200-4be9-aecc-9a89adfd1e85",
+  To: to,
+  From: "bosquemagicodev@gmail.com",
   Subject: subject,
   Body: bodyEmail
  }).then(
@@ -117,7 +117,7 @@ function sendAgenciasForm() {
     <strong>Teléfono:</strong> ${telefonoAgencias} <br/>
     <strong>Correo:</strong> ${correoAgencias} <br/>`;
 
- sendEmail('Solicitud de información: AGENCIAS', bodyEmail, 'agenciasModal');
+ sendEmail('Solicitud de información: AGENCIAS', bodyEmail, 'agenciasModal', 'negocios@bosquemagico.com.mx');
  clearModalAgencias();
 }
 
@@ -150,7 +150,7 @@ function sendFacturasForm() {
   bodyEmail += "<br/><strong>Extranjero: </strong> No";
  }
 
- sendEmail('Solicitud de FACTURA', bodyEmail, 'facturaModal');
+ sendEmail('Solicitud de FACTURA', bodyEmail, 'facturaModal', 'facturas@bosquemagico.com.mx');
  clearModalFacturacion();
 }
 
