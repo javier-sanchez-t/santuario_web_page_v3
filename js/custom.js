@@ -73,7 +73,7 @@ function sendEmail(subject, bodyEmail, modalName, to) {
  $.LoadingOverlay("show");
 
  Email.send({
-  SecureToken: "f69ef3a3-f200-4be9-aecc-9a89adfd1e85",
+  SecureToken: "106b673b-d886-43d2-a590-ce5bcf679dbb",
   To: to,
   From: "bosquemagicodev@gmail.com",
   Subject: subject,
