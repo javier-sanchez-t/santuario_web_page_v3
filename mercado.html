@@ -178,7 +178,7 @@
 
 
  <!--MERCADO-->
- <div class="container-fluid mercadoSection" id="GASTRONOMIA">
+ <div class="container mercadoSection" id="GASTRONOMIA">
   <div class="row" style="padding-bottom: 20px;" data-aos="fade-right">
    <img src="./img/icons/Nuevo_v2.png" alt="Nuevo" class="w120" width="130">
   </div>
@@ -192,31 +192,38 @@
 
 
   <div class="row" style="padding: 130px 0px 120px 0px;" data-aos="fade-up" id="OPTIONS">
-   <div class="col-6 col-sm-6 col-lg-6 center padB20">
+   <div class="col-6 col-sm-6 col-lg-3 center padB20">
     <a class="hvr-bubble-float-bottom-orange" onclick="location.href='mercado.html?option=MOKA';" id="BTN_MOKA">
      <img src="img/mercado_estacion/moka.png" alt="Moka Haus Café" style="width: 200px;" class="optionsSection">
     </a>
    </div>
-   <div class="col-6 col-sm-6 col-lg-6 center">
+   <div class="col-6 col-sm-6 col-lg-3 center">
     <a class="hvr-bubble-float-bottom-orange" onclick="location.href='mercado.html?option=CHURRERIA';"
      id="BTN_CHURRERIA">
      <img src="img/mercado_estacion/la_antigua.png" alt="Churrería La Antigua" style="width: 200px;"
       class="optionsSection">
     </a>
    </div>
-   <!--div class="col-6 col-sm-6 col-lg-4 center">
-    <a href="" class="hvr-bubble-float-bottom-purple">
-     <img src="img/hospedaje/rancho_la_torre.png" alt="Rancho la torre" style="width: 200px;" class="optionsSection">
+   <div class="col-6 col-sm-6 col-lg-3 center">
+    <a class="hvr-bubble-float-bottom-orange" onclick="location.href='mercado.html?option=CHURRERIA';">
+     <img src="img/mercado_estacion/pizzas.png" alt="Churreria La Antigua" style="width: 200px;"
+      class="optionsSection">
     </a>
-   </div-->
+   </div>
+   <div class="col-6 col-sm-6 col-lg-3 center">
+    <a class="hvr-bubble-float-bottom-orange" onclick="location.href='mercado.html?option=CHURRERIA';">
+     <img src="img/mercado_estacion/vagon.png" alt="Churreria La Antigua" style="width: 200px;"
+      class="optionsSection">
+    </a>
+   </div>
   </div>
  </div>
  <!--END OF MERCADO-->
 
 
  <!-- MOKA -->
- <div class="mercado" id="MOKA" style="display: none;">
-  <div class="container">
+ <div id="MOKA" style="display: none;">
+  <div class="container mercado">
    <div class="row">
     <div class="col-12 descriptionText"
      style="padding-top: 50px; padding-bottom: 25px; border-bottom: 3px solid #efb720;">
@@ -248,8 +255,8 @@
  <!-- END OF MOKA-->
 
  <!-- CHURRERIA -->
- <div class="mercado" id="CHURRERIA" style="display: none;">
-  <div class="container">
+ <div id="CHURRERIA" style="display: none;">
+  <div class="container mercado">
    <div class="row">
     <div class="col-12 descriptionText"
      style="padding-top: 50px; padding-bottom: 25px; border-bottom: 3px solid #efb720;">
@@ -275,7 +282,7 @@
     </div>
    </div>
 
-   <div class="row" style="padding-bottom: 80px;">
+   <div class="row">
     <div class="col-sm-6" style="padding-bottom: 30px;">
      <img class="imgCarruselMedio imgDescription" src="./img/mercado_estacion/Churreria/img_2.jpg" class="img-fluid"
       alt="Churrería" loading="lazy">
@@ -301,6 +308,12 @@
 
 
 
+
+ <!--VOLCANES-->
+ <div>
+  <img src="./img/Footer/bosque-magico-volcanes_v2.png" alt="Volcanes" style="width: 100%; opacity: 0.30;">
+ </div>
+ <!--END OF VOLCANES-->
 
  <!--FOOTER -->
  <div class="container-fluid footer" id="CONTACTO">
@@ -424,8 +437,9 @@
       </tr>
      </table>
     </div>
-    <div>
-     <a href="#" data-toggle="modal" data-target="#agenciasModal" onclick="clearModalAgencias();" class="footerLink">
+    <div style="padding-top: 20px;">
+     <a href="#" data-toggle="modal" data-target="#agenciasModal" onclick="clearModalAgencias();"
+      class="footerLink footerButton">
       NEGOCIOS
      </a>
     </div>
@@ -452,6 +466,11 @@
     <div>
      <a href="./img/informacion/Reglamento.jpg" download class="footerLink">
       REGLAMENTO
+     </a>
+    </div>
+    <div style="padding-top: 15px;">
+     <a href="./img/Footer/mapa.jpg" download class="footerLink footerButton">
+      MAPA
      </a>
     </div>
    </div>
@@ -533,7 +552,7 @@
   <div style="padding-bottom: 10px;">
    <img src="./img/Footer/bosque magico.png" alt="Bosque mágico" width="100">
   </div>
-  <div>
+  <div class="derechos">
    &copy; 2020 Derechos Reservados. Bosque Mágico.
   </div>
  </div>
